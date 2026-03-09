@@ -5,3 +5,7 @@ def home(request):
     text = 'This is the text for the home page.'
     context = {'text': text}
     return render(request, 'home.html', context)
+
+def about(request):
+    context = {'title': 'About Us'}
+    return render(request, 'about.html', context)
